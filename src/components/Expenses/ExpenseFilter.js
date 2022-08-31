@@ -2,12 +2,11 @@ import React from "react";
 import "./ExpenseFilter.css";
 
 const ExpenseFilter = (props) => {
+  const dropdownChangeHandler = (event) => {
+    props.onSelect(event.target.value);
+  };
 
-    const dropdownChangeHandler = (event) => {
-        props.onSelect(event.target.value) ;
-    }
-
-    return (
+  return (
     <div className="expenses-filter">
       <div className="expenses-filter__control">
         <label>Filter by year</label>
