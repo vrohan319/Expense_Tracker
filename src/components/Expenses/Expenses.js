@@ -18,7 +18,7 @@ const Expenses = (props) => {
         onFilterChange={filterChangeHandler}
       />
 
-      {props.expenses.map((expense) => {
+      {props.items.map((expense) => {
         return (
           <ExpenseItem
             title={expense.title}
